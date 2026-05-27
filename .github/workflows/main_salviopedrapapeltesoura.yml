@@ -48,6 +48,5 @@ jobs:
         uses: azure/webapps-deploy@v3
         with:
           app-name: 'salviopedrapapeltesoura'
-          slot-name: 'Production'
           package: '*.war'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0B5DA9C6E7984A01A458BBD957B5D0FA }}
