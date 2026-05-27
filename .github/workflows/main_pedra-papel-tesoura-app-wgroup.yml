@@ -29,5 +29,5 @@ jobs:
       with: 
         app-name: 'pedra-papel-tesoura-app-wgroup'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_8170f6f26458451393470c18320b0885 }}
+        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8170F6F26458451393470C18320B0885 }}
         package: '${{ github.workspace }}/target/*.war'
