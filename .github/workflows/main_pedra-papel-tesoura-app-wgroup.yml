@@ -1,4 +1,4 @@
-name: Build and deploy WAR app to Azure Web App - salviopedrapapeltesoura
+name: Build and deploy WAR app to Azure Web App - pedra-papel-tesoura-app-wgroup
 
 on:
   push:
@@ -44,6 +44,6 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'salviopedrapapeltesoura'
+          app-name: 'pedra-papel-tesoura-app-wgroup'
           package: '*.war'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8170F6F26458451393470C18320B0885 }}
